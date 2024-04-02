@@ -1,0 +1,7 @@
+{
+  "movie_id": "{{request.path.[3]}}" ,
+  "name": "Toy Story",
+  "year": 2019,
+  "cast": "Tom Hanks, {{jsonPath request.body '$.cast'}}",
+  "release_date": "2019-06-20"
+}
